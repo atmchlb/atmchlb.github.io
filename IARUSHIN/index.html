@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.png" />
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="full_page_container">
+    <div class="div1">
+        <div class="mid_div">
+            <img class="logo_image" src="img/logo.png" alt="logo">
+            <h3 class="h3_white">
+                С помощью нас<br>вы сможете создать то, о чем
+            </h3>
+            <h2 class="h2_white">
+                <span class="span_h2_white">
+                    желаете!
+                </span>
+            </h2>
+            <p class="text_white">
+                Наши возможности + опыт позволят Вам достичь<br>огромного успеха. Мы верим в вас! И знаем это на<br>все 100%. Вас не остановить!
+            </p>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"  class="btn" target="_blank">Узнать больше...</a>
+        </div>
+        
+            <img class="big_image" src="img/header-img.png" alt="телефон с тетей">
+        
+    </div>
+    <div class="div2">
+        <h2 class="h2_black">
+            Что Вам необходимо?
+        </h2>
+        <div class="div3">
+            <div class="mini_div">
+                <img src="img/f3.png">
+                <h4 class="h4_black">
+                    Первый блок
+                </h4>
+                <p class="p_grey">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+            </div>
+            <div class="mini_div">
+                <img src="img/f4.png">
+                <h4 class="h4_black">
+                    Второй блок
+                </h4>
+                <p class="p_grey">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                </p>
+            </div>
+            <div class="mini_div">
+                <img src="img/f5.png">
+                <h4 class="h4_black">
+                    Третий блок
+                </h4>
+                <p class="p_grey">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="div4">
+        <h4 class="h4_black_1">
+            Форма заказа обратного звонка
+        </h4>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <input type="text" name="name" id="" value="" placeholder="Имя" required>
+            <input type="email" name="email" value="" placeholder="Введите свой E-mail" required>
+            <input type="tel" name="tel" id="" placeholder="Телефон" required>
+            <input type="text" name="theme" id="" value="" placeholder="Какая тема вас интересует?">
+            <button type="submit" class="yellow_button">Отправить вопрос!</button>
+        </form>
+    </div>
+    <div class="div3">
+        
+            
+            <form class="mealOrderForm" action="#" method="post" enctype="multipart/form-data">
+                <h4 class="h4_black_1">Форма для заказа вкусняшек</h4>
+                <label for="nameInOrder">Введите свое имя:</label>
+                <input type="text" id="nameInOrder" placeholder="Ваше имя" name="orderName">
+                
+                <label for="telInOrder">Введите свой номер телефона:</label>
+                <input type="tel" id="telInOrder" placeholder="+7-(xxx)-xxx-xx-xx" name="orderPhone">
+                
+                <label for="mealInOrder">Выберите вкусняшку:</label>
+                <select id="mealInOrder" name="orderMeal">
+                  <option value="Печеньки">Печеньки</option>
+                  <option value="Торт">Торт</option>
+                  <option value="Шашлык">Шашлык</option>
+                  <option value="Пицца">Пицца</option>
+                  <option value="Суши">Суши</option>
+                  <option value="Фрукты">Фрукты</option>
+                </select>
+                
+                <label for="adressInOrder">Введите свой адрес:</label>
+                <input type="text" id="adressInOrder" name="orderAdress" placeholder="Ул. Пушкина д. 35 кв.4">
+                
+                <label for="orderPaymentMethod">Выберите способ оплаты:</label>
+                <span display:block><input type="radio" id="card" value="card" name="orderPaymentMethod">Картой</span>
+                <span display:block><input type="radio" id="cash" value="cash" name="orderPaymentMethod">Наличными</span>
+                
+                <button type="submit" class="yellow_button">Оформить заказ</button>
+              </form>
+    </div>
+    <footer>
+            <span class="span_p_bottom">
+                ©Все на этом сайте защищено
+            </span>
+    </footer>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
