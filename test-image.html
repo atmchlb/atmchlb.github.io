@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест картинок</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .image-test { margin: 20px 0; padding: 10px; border: 1px solid #ccc; }
+        img { max-width: 200px; max-height: 200px; margin: 10px; }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+    <h1>Тест загрузки картинок</h1>
+    
+    <div class="image-test">
+        <h3>Тест 1: hamster.jpg</h3>
+        <img src="/images/hamster.jpg" alt="Хомяк" onload="this.parentNode.innerHTML += '<p class=\'success\'>✅ Загружено успешно</p>'" onerror="this.parentNode.innerHTML += '<p class=\'error\'>❌ Ошибка загрузки</p>'">
+    </div>
+    
+    <div class="image-test">
+        <h3>Тест 2: guinea-pig.jpg</h3>
+        <img src="/images/guinea-pig.jpg" alt="Морская свинка" onload="this.parentNode.innerHTML += '<p class=\'success\'>✅ Загружено успешно</p>'" onerror="this.parentNode.innerHTML += '<p class=\'error\'>❌ Ошибка загрузки</p>'">
+    </div>
+    
+    <div class="image-test">
+        <h3>Тест 3: rabbit.jpg</h3>
+        <img src="/images/rabbit.jpg" alt="Кролик" onload="this.parentNode.innerHTML += '<p class=\'success\'>✅ Загружено успешно</p>'" onerror="this.parentNode.innerHTML += '<p class=\'error\'>❌ Ошибка загрузки</p>'">
+    </div>
+    
+    <div class="image-test">
+        <h3>Тест 4: hamster-food.jpg</h3>
+        <img src="/images/hamster-food.jpg" alt="Корм для хомяков" onload="this.parentNode.innerHTML += '<p class=\'success\'>✅ Загружено успешно</p>'" onerror="this.parentNode.innerHTML += '<p class=\'error\'>❌ Ошибка загрузки</p>'">
+    </div>
+    
+    <p><strong>Откройте эту страницу в браузере по адресу: http://localhost:3000/test-image.html</strong></p>
+</body>
+</html>
