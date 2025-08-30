@@ -1,0 +1,350 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #976E6E;
+    padding: 0.8rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 0;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation ul li a {
+    padding: 0.8rem 1.2rem;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.navigation ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.navigation ul li a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.icons {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0.5rem;
+    border-radius: 50%;
+    position: relative;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.icon svg path {
+    fill: #fff;
+    stroke: #fff;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: bold;
+    min-width: 20px;
+}
+
+/* Мобильное меню */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.mobile-menu-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Адаптивность для всех популярных размеров */
+
+/* Большие экраны (1200px и выше) */
+@media (min-width: 1200px) {
+    .navigation {
+        padding: 1rem 3rem;
+    }
+    
+    .navigation ul li a {
+        padding: 1rem 1.5rem;
+        font-size: 1.2rem;
+    }
+    
+    .icons {
+        gap: 2rem;
+    }
+    
+    .icon svg {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .cart-badge {
+        width: 24px;
+        height: 24px;
+        font-size: 0.8rem;
+        min-width: 24px;
+    }
+}
+
+/* Средние экраны (992px - 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+    .navigation {
+        padding: 0.9rem 2.5rem;
+    }
+    
+    .navigation ul li a {
+        padding: 0.9rem 1.3rem;
+        font-size: 1.15rem;
+    }
+    
+    .icons {
+        gap: 1.8rem;
+    }
+    
+    .icon svg {
+        width: 26px;
+        height: 26px;
+    }
+    
+    .cart-badge {
+        width: 22px;
+        height: 22px;
+        font-size: 0.75rem;
+        min-width: 22px;
+    }
+}
+
+/* Планшеты (768px - 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+    .navigation {
+        padding: 0.8rem 2rem;
+    }
+    
+    .navigation ul li a {
+        padding: 0.8rem 1.2rem;
+        font-size: 1.1rem;
+    }
+    
+    .icons {
+        gap: 1.5rem;
+    }
+    
+    .icon svg {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .cart-badge {
+        width: 20px;
+        height: 20px;
+        font-size: 0.75rem;
+        min-width: 20px;
+    }
+}
+
+/* Мобильные устройства (576px - 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+    .navigation {
+        padding: 0.7rem 1.5rem;
+    }
+    
+    .navigation ul {
+        gap: 1.5rem;
+    }
+    
+    .navigation ul li a {
+        padding: 0.7rem 1rem;
+        font-size: 1rem;
+    }
+    
+    .icons {
+        gap: 1.2rem;
+    }
+    
+    .icon svg {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .cart-badge {
+        width: 18px;
+        height: 18px;
+        font-size: 0.7rem;
+        min-width: 18px;
+    }
+}
+
+/* Маленькие мобильные (до 575px) */
+@media (max-width: 575px) {
+    .navigation {
+        padding: 0.6rem 1rem;
+        flex-wrap: wrap;
+    }
+    
+    .navigation ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+        order: 3;
+    }
+    
+    .navigation ul.show {
+        display: flex;
+    }
+    
+    .navigation ul li {
+        width: 100%;
+    }
+    
+    .navigation ul li a {
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 0.95rem;
+        border-radius: 6px;
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+        order: 2;
+    }
+    
+    .icons {
+        gap: 1rem;
+        order: 1;
+    }
+    
+    .icon svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .cart-badge {
+        width: 16px;
+        height: 16px;
+        font-size: 0.65rem;
+        min-width: 16px;
+    }
+}
+
+/* Очень маленькие экраны (до 480px) */
+@media (max-width: 480px) {
+    .navigation {
+        padding: 0.5rem 0.8rem;
+    }
+    
+    .navigation ul li a {
+        padding: 0.7rem;
+        font-size: 0.9rem;
+    }
+    
+    .icons {
+        gap: 0.8rem;
+    }
+    
+    .icon svg {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .cart-badge {
+        width: 14px;
+        height: 14px;
+        font-size: 0.6rem;
+        min-width: 14px;
+    }
+    
+    .mobile-menu-toggle {
+        font-size: 1.3rem;
+    }
+}
+
+/* Ландшафтная ориентация на мобильных */
+@media (max-width: 767px) and (orientation: landscape) {
+    .navigation {
+        padding: 0.5rem 1.5rem;
+    }
+    
+    .navigation ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .navigation ul li a {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .icons {
+        gap: 1rem;
+    }
+    
+    .icon svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .cart-badge {
+        width: 16px;
+        height: 16px;
+        font-size: 0.65rem;
+        min-width: 16px;
+    }
+}

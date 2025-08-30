@@ -1,0 +1,680 @@
+.checkout-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.checkout-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.order-summary {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    position: sticky;
+    top: 2rem;
+}
+
+.order-summary h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+.order-items {
+    margin-bottom: 2rem;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 0.8rem;
+}
+
+.order-item:last-child {
+    border-bottom: none;
+}
+
+.item-info {
+    flex: 1;
+}
+
+.item-name {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.3rem;
+}
+
+.item-quantity {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.item-price {
+    font-weight: 700;
+    color: #4CAF50;
+    font-size: 1.1rem;
+}
+
+.order-total {
+    border-top: 2px solid #dee2e6;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.order-total h3 {
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.total-price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4CAF50;
+}
+
+.checkout-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-form h2 {
+    margin-bottom: 2rem;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.1);
+}
+
+.error-input {
+    border-color: #dc3545 !important;
+}
+
+.error-message {
+    display: block;
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.payment-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.payment-select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: white;
+    cursor: pointer;
+}
+
+.submit-order-btn {
+    width: 100%;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 1rem;
+}
+
+.submit-order-btn:hover {
+    background: #45a049;
+}
+
+.submit-order-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.empty-cart-message {
+    text-align: center;
+    padding: 3rem;
+    color: #666;
+}
+
+.empty-cart-message h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.empty-cart-message p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.empty-cart-message a {
+    display: inline-block;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.empty-cart-message a:hover {
+    background: #45a049;
+}
+
+/* Адаптивность для всех популярных размеров */
+
+/* Большие экраны (1200px и выше) */
+@media (min-width: 1200px) {
+    .checkout-container {
+        max-width: 1400px;
+        margin: 3rem auto;
+        padding: 3rem;
+    }
+    
+    .checkout-content {
+        gap: 4rem;
+    }
+    
+    .order-summary {
+        padding: 2.5rem;
+    }
+    
+    .order-summary h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .order-item {
+        padding: 1.2rem;
+    }
+    
+    .item-name {
+        font-size: 1.1rem;
+    }
+    
+    .item-price {
+        font-size: 1.2rem;
+    }
+    
+    .order-total h3 {
+        font-size: 1.7rem;
+    }
+    
+    .total-price {
+        font-size: 2.2rem;
+    }
+    
+    .checkout-form {
+        padding: 2.5rem;
+    }
+    
+    .checkout-form h2 {
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .payment-select {
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+    
+    .submit-order-btn {
+        padding: 1.2rem;
+        font-size: 1.2rem;
+    }
+}
+
+/* Средние экраны (992px - 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+    .checkout-container {
+        max-width: 1200px;
+        margin: 2.5rem auto;
+        padding: 2.5rem;
+    }
+    
+    .checkout-content {
+        gap: 3.5rem;
+    }
+    
+    .order-summary {
+        padding: 2.2rem;
+    }
+    
+    .order-summary h2 {
+        font-size: 1.9rem;
+        margin-bottom: 1.8rem;
+    }
+    
+    .order-item {
+        padding: 1.1rem;
+    }
+    
+    .item-name {
+        font-size: 1.05rem;
+    }
+    
+    .item-price {
+        font-size: 1.15rem;
+    }
+    
+    .order-total h3 {
+        font-size: 1.6rem;
+    }
+    
+    .total-price {
+        font-size: 2.1rem;
+    }
+    
+    .checkout-form {
+        padding: 2.2rem;
+    }
+    
+    .checkout-form h2 {
+        font-size: 1.9rem;
+        margin-bottom: 2.2rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .payment-select {
+        padding: 0.9rem;
+        font-size: 1.05rem;
+    }
+    
+    .submit-order-btn {
+        padding: 1.1rem;
+        font-size: 1.15rem;
+    }
+}
+
+/* Планшеты (768px - 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+    .checkout-container {
+        max-width: 100%;
+        margin: 2rem 1rem;
+        padding: 2rem;
+    }
+    
+    .checkout-content {
+        gap: 3rem;
+    }
+    
+    .order-summary {
+        padding: 2rem;
+    }
+    
+    .order-summary h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .order-item {
+        padding: 1rem;
+    }
+    
+    .item-name {
+        font-size: 1rem;
+    }
+    
+    .item-price {
+        font-size: 1.1rem;
+    }
+    
+    .order-total h3 {
+        font-size: 1.5rem;
+    }
+    
+    .total-price {
+        font-size: 2rem;
+    }
+    
+    .checkout-form {
+        padding: 2rem;
+    }
+    
+    .checkout-form h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .payment-select {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+    
+    .submit-order-btn {
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+}
+
+/* Мобильные устройства (576px - 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+    .checkout-container {
+        margin: 1.5rem 0.8rem;
+        padding: 1.5rem;
+    }
+    
+    .checkout-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .order-summary {
+        position: static;
+        padding: 1.5rem;
+    }
+    
+    .order-summary h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .order-item {
+        padding: 0.8rem;
+    }
+    
+    .item-name {
+        font-size: 0.95rem;
+    }
+    
+    .item-price {
+        font-size: 1rem;
+    }
+    
+    .order-total h3 {
+        font-size: 1.4rem;
+    }
+    
+    .total-price {
+        font-size: 1.8rem;
+    }
+    
+    .checkout-form {
+        padding: 1.5rem;
+    }
+    
+    .checkout-form h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .payment-select {
+        padding: 0.7rem;
+        font-size: 0.95rem;
+    }
+    
+    .submit-order-btn {
+        padding: 0.9rem;
+        font-size: 1rem;
+    }
+}
+
+/* Маленькие мобильные (до 575px) */
+@media (max-width: 575px) {
+    .checkout-container {
+        margin: 1rem 0.5rem;
+        padding: 1rem;
+    }
+    
+    .checkout-content {
+        gap: 1.5rem;
+    }
+    
+    .order-summary {
+        padding: 1.2rem;
+    }
+    
+    .order-summary h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+    
+    .order-item {
+        padding: 0.7rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .item-info {
+        width: 100%;
+    }
+    
+    .item-name {
+        font-size: 0.9rem;
+    }
+    
+    .item-price {
+        font-size: 0.95rem;
+        align-self: flex-end;
+    }
+    
+    .order-total h3 {
+        font-size: 1.3rem;
+    }
+    
+    .total-price {
+        font-size: 1.6rem;
+    }
+    
+    .checkout-form {
+        padding: 1.2rem;
+    }
+    
+    .checkout-form h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .form-row {
+        gap: 0.4rem;
+    }
+    
+    .form-group {
+        margin-bottom: 1.2rem;
+    }
+    
+    .form-group label {
+        font-size: 0.9rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .payment-select {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+    
+    .submit-order-btn {
+        padding: 0.8rem;
+        font-size: 0.95rem;
+    }
+}
+
+/* Очень маленькие экраны (до 480px) */
+@media (max-width: 480px) {
+    .checkout-container {
+        margin: 0.8rem 0.3rem;
+        padding: 0.8rem;
+    }
+    
+    .checkout-content {
+        gap: 1.2rem;
+    }
+    
+    .order-summary {
+        padding: 1rem;
+    }
+    
+    .order-summary h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .order-item {
+        padding: 0.6rem;
+        gap: 0.4rem;
+    }
+    
+    .item-name {
+        font-size: 0.85rem;
+    }
+    
+    .item-price {
+        font-size: 0.9rem;
+    }
+    
+    .order-total h3 {
+        font-size: 1.2rem;
+    }
+    
+    .total-price {
+        font-size: 1.5rem;
+    }
+    
+    .checkout-form {
+        padding: 1rem;
+    }
+    
+    .checkout-form h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .form-row {
+        gap: 0.3rem;
+    }
+    
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    
+    .form-group label {
+        font-size: 0.85rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .payment-select {
+        padding: 0.5rem;
+        font-size: 0.85rem;
+    }
+    
+    .submit-order-btn {
+        padding: 0.7rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Ландшафтная ориентация на мобильных */
+@media (max-width: 767px) and (orientation: landscape) {
+    .checkout-container {
+        margin: 1rem 1.5rem;
+        padding: 1.2rem;
+    }
+    
+    .checkout-content {
+        gap: 1.5rem;
+    }
+    
+    .order-summary {
+        padding: 1.2rem;
+    }
+    
+    .order-summary h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+    
+    .order-item {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.8rem;
+    }
+    
+    .item-info {
+        width: auto;
+    }
+    
+    .item-price {
+        align-self: auto;
+    }
+    
+    .checkout-form {
+        padding: 1.2rem;
+    }
+    
+    .checkout-form h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.8rem;
+    }
+} 

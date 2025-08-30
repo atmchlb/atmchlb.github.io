@@ -1,0 +1,325 @@
+footer {
+    background-color: #976E6E;
+    color: #fff;
+    margin-top: auto;
+    padding: 2rem 0;
+    font-family: "Irish Grover", serif;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-section h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.footer-section p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-section ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+}
+
+/* Адаптивность для всех популярных размеров */
+
+/* Большие экраны (1200px и выше) */
+@media (min-width: 1200px) {
+    footer {
+        padding: 3rem 0;
+    }
+    
+    .footer-content {
+        max-width: 1400px;
+        gap: 3rem;
+        padding: 0 3rem;
+    }
+    
+    .footer-section h3 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .footer-section p {
+        font-size: 1.1rem;
+    }
+    
+    .footer-section ul li a {
+        font-size: 1.05rem;
+    }
+    
+    .footer-bottom {
+        margin-top: 3rem;
+        padding-top: 3rem;
+    }
+    
+    .footer-bottom p {
+        font-size: 1rem;
+    }
+}
+
+/* Средние экраны (992px - 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+    footer {
+        padding: 2.5rem 0;
+    }
+    
+    .footer-content {
+        max-width: 1200px;
+        gap: 2.5rem;
+        padding: 0 2.5rem;
+    }
+    
+    .footer-section h3 {
+        font-size: 1.6rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .footer-section p {
+        font-size: 1.05rem;
+    }
+    
+    .footer-section ul li a {
+        font-size: 1rem;
+    }
+    
+    .footer-bottom {
+        margin-top: 2.5rem;
+        padding-top: 2.5rem;
+    }
+}
+
+/* Планшеты (768px - 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+    footer {
+        padding: 2rem 0;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 0 2rem;
+    }
+    
+    .footer-section h3 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+    
+    .footer-section p {
+        font-size: 1rem;
+    }
+    
+    .footer-section ul li a {
+        font-size: 0.95rem;
+    }
+    
+    .footer-bottom {
+        margin-top: 2rem;
+        padding-top: 2rem;
+    }
+}
+
+/* Мобильные устройства (576px - 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+    footer {
+        padding: 1.5rem 0;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1.5rem;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+    
+    .footer-section h3 {
+        font-size: 1.3rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .footer-section p {
+        font-size: 0.95rem;
+    }
+    
+    .footer-section ul li {
+        margin-bottom: 0.6rem;
+    }
+    
+    .footer-section ul li a {
+        font-size: 0.9rem;
+    }
+    
+    .footer-bottom {
+        margin-top: 1.5rem;
+        padding-top: 1.5rem;
+    }
+    
+    .footer-bottom p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Маленькие мобильные (до 575px) */
+@media (max-width: 575px) {
+    footer {
+        padding: 1.2rem 0;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+        padding: 0 1rem;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+    
+    .footer-section h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    .footer-section p {
+        font-size: 0.9rem;
+    }
+    
+    .footer-section ul li {
+        margin-bottom: 0.5rem;
+    }
+    
+    .footer-section ul li a {
+        font-size: 0.85rem;
+    }
+    
+    .footer-bottom {
+        margin-top: 1.2rem;
+        padding-top: 1.2rem;
+    }
+    
+    .footer-bottom p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Очень маленькие экраны (до 480px) */
+@media (max-width: 480px) {
+    footer {
+        padding: 1rem 0;
+    }
+    
+    .footer-content {
+        gap: 1rem;
+        padding: 0 0.8rem;
+    }
+    
+    .footer-section h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .footer-section p {
+        font-size: 0.85rem;
+    }
+    
+    .footer-section ul li {
+        margin-bottom: 0.4rem;
+    }
+    
+    .footer-section ul li a {
+        font-size: 0.8rem;
+    }
+    
+    .footer-bottom {
+        margin-top: 1rem;
+        padding-top: 1rem;
+    }
+    
+    .footer-bottom p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Ландшафтная ориентация на мобильных */
+@media (max-width: 767px) and (orientation: landscape) {
+    footer {
+        padding: 1rem 0;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        padding: 0 1.5rem;
+    }
+    
+    .footer-section {
+        text-align: left;
+    }
+    
+    .footer-section h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .footer-section p {
+        font-size: 0.9rem;
+    }
+    
+    .footer-section ul li a {
+        font-size: 0.85rem;
+    }
+    
+    .footer-bottom {
+        margin-top: 1.5rem;
+        padding-top: 1.5rem;
+    }
+}

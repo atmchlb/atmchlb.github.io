@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+    color: #212121;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Irish Grover", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3em;
+    background-color: #F9E0B0;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0;
+}
+
+header a{
+    text-decoration: none;
+    color: #212121;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+header a:hover {
+    transform: scale(1.02);
+}
+
+header h1{
+    padding: 0;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+header svg{
+    margin: 0 0.5em;
+    height: 40px;
+    width: auto;
+}
+
+/* Адаптивность для всех популярных размеров */
+
+/* Большие экраны (1200px и выше) */
+@media (min-width: 1200px) {
+    header {
+        padding: 2rem 3rem;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header svg {
+        height: 45px;
+    }
+}
+
+/* Средние экраны (992px - 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+    header {
+        padding: 1.8rem 2.5rem;
+    }
+    
+    header h1 {
+        font-size: 1.9rem;
+    }
+    
+    header svg {
+        height: 42px;
+    }
+}
+
+/* Планшеты (768px - 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+    header {
+        padding: 1.5rem 2rem;
+    }
+    
+    header h1 {
+        font-size: 1.7rem;
+    }
+    
+    header svg {
+        height: 38px;
+    }
+}
+
+/* Мобильные устройства (576px - 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+    header {
+        padding: 1.2rem 1.5rem;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    header svg {
+        height: 35px;
+        margin: 0 0.4em;
+    }
+}
+
+/* Маленькие мобильные (до 575px) */
+@media (max-width: 575px) {
+    header {
+        padding: 1rem;
+        justify-content: center;
+    }
+    
+    header h1 {
+        font-size: 1.3rem;
+    }
+    
+    header svg {
+        height: 30px;
+        margin: 0 0.3em;
+    }
+}
+
+/* Очень маленькие экраны (до 480px) */
+@media (max-width: 480px) {
+    header {
+        padding: 0.8rem;
+    }
+    
+    header h1 {
+        font-size: 1.1rem;
+    }
+    
+    header svg {
+        height: 25px;
+        margin: 0 0.2em;
+    }
+}
+
+/* Ландшафтная ориентация на мобильных */
+@media (max-width: 767px) and (orientation: landscape) {
+    header {
+        padding: 0.8rem 1.5rem;
+    }
+    
+    header h1 {
+        font-size: 1.4rem;
+    }
+    
+    header svg {
+        height: 32px;
+    }
+}

@@ -1,0 +1,61 @@
+.full-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #F9E0B0;
+}
+
+main {
+  flex: 1;
+  padding: 2rem 0;
+}
+
+/* Адаптивность для всех популярных размеров */
+
+/* Большие экраны (1200px и выше) */
+@media (min-width: 1200px) {
+  main {
+    padding: 3rem 0;
+  }
+}
+
+/* Средние экраны (992px - 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+  main {
+    padding: 2.5rem 0;
+  }
+}
+
+/* Планшеты (768px - 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  main {
+    padding: 2rem 0;
+  }
+}
+
+/* Мобильные устройства (576px - 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+  main {
+    padding: 1.5rem 0;
+  }
+}
+
+/* Маленькие мобильные (до 575px) */
+@media (max-width: 575px) {
+  main {
+    padding: 1rem 0;
+  }
+}
+
+/* Очень маленькие экраны (до 480px) */
+@media (max-width: 480px) {
+  main {
+    padding: 0.8rem 0;
+  }
+}
