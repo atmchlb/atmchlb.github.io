@@ -1,7 +1,7 @@
 {
   "name": "mousehouse",
   "version": "0.1.0",
-  "homepage": "https://atmchlb.github.io/",
+  "homepage": "https://atmchlb.github.io/atmchlb.github.io",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.0",
